@@ -3,17 +3,10 @@ import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react
 import ResumeGerman from './components/ResumeGerman.jsx';
 import ResumeEnglish from './components/ResumeEnglish.jsx';
 import Home from './components/Home.jsx';
+import Footer from './components/Footer.jsx';
 import './App.css'
 
 function App() {
-  return (
-    <Router>
-      <Content />
-    </Router>
-  );
-}
-
-function Content() {
   const location = useLocation();
 
   return (
@@ -37,11 +30,10 @@ function Content() {
           <Route path="/german" element={<ResumeGerman />}></Route>
           <Route path="/english" element={<ResumeEnglish />}></Route>
         </Routes>
-        <div>
-          <h1>Hola lindos/as... Estoy haciendo una hoja de vida para mis nuevos trabajos. Estoy triunfando</h1>
-        </div>
+        <Footer />
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
