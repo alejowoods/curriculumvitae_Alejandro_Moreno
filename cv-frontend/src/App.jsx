@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react
 import ResumeGerman from './components/ResumeGerman.jsx';
 import ResumeEnglish from './components/ResumeEnglish.jsx';
 import Home from './components/Home.jsx';
+import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import './App.css'
 
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <>
+      <Header />
         <nav>
           <ul>
             <li>
