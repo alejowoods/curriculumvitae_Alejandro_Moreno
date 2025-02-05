@@ -13,6 +13,11 @@ function App() {
   return (
     <>
       <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/german" element={<ResumeGerman />}></Route>
+          <Route path="/english" element={<ResumeEnglish />}></Route>
+        </Routes>
         <nav>
           <ul>
             <li>
@@ -26,14 +31,8 @@ function App() {
             </li>
           </ul>
         </nav>
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/german" element={<ResumeGerman />}></Route>
-          <Route path="/english" element={<ResumeEnglish />}></Route>
-        </Routes>
         <Footer />
-      
+
     </>
   );
 }
