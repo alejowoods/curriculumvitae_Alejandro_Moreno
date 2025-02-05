@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-image {
+    max-width: 20px;
+    height: auto;
+}
+
+@media (min-width: 426px) {
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
